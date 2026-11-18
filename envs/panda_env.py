@@ -1,7 +1,7 @@
 import numpy as np, mujoco
 from pathlib import Path
 
-XML = Path(__file__).resolve().parents[1] / "mujoco_menagerie/franka_emika_panda/pick_scene.xml"
+XML = Path(__file__).resolve().parent / "assets/pick_scene.xml"
 HOME = np.array([0, -0.785, 0, -2.356, 0, 1.571, -0.785])
 
 class PandaPickEnv:
